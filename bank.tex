@@ -1,0 +1,72 @@
+\documentclass[letterpaper,twoside]{book}
+
+% Preamble {{{
+\usepackage[margin=1in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{txfonts,pxfonts}
+\usepackage[many]{tcolorbox}
+\usepackage{wasysym}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{pgfplots}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{harpoon}
+
+\usepackage{lipsum}
+\usepackage{cancel}
+\usepackage[symbol]{footmisc} % replaces footnotes with things that aren't letters.
+
+
+\renewcommand{\thempfootnote}{\thefootnote}
+\renewcommand{\proofname}{Begin Proof}
+\pgfplotsset{compat=newest}
+\renewcommand{\qedsymbol}{\hfill\textcolor{pfsd}{$\blacksquare$}}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcounter{ex}
+\definecolor{solsd}{RGB}{51,0,111}
+\definecolor{dubg}{RGB}{232,227,211}
+\newtcolorbox[use counter=ex]{que}[1][Question \thetcbcounter]{
+  colback=dubg, colframe=solsd,
+  fonttitle=\bfseries, enhanced,
+  attach boxed title to top left, boxed title style={sharp corners, colback=solsd}, boxrule=0pt, leftrule=4pt, rightrule=2pt,
+sharp corners, breakable, title={#1}
+}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot[c]{\thepage}
+
+\tcbuselibrary{external}
+\tcbEXTERNALIZE
+
+\title{A Long Ass List of Problems for 33X}
+\author{Jan Armendariz-Bones et al.}
+\date{Last Updated: \today}
+%}}}
+
+\begin{document}{\let\newpage\relax\maketitle}
+\maketitle
+The idea for this page came from a YouTube video called ``10,000'' problems in Analysis, which can be found \href{https://youtu.be/3mvNug_YM-g?si=9sa2EVkcANsY7IBk}{here}!
+
+Of course, the goal is to compile a long list of problems ranging from very difficult to near trivial, all to get a better grasp of what it means to do \emph{real} advanced calculus problems.
+\newpage
+\begin{que}
+		Source: Mathematics Discord \href{https://discord.com/channels/268882317391429632/576508782637744130/1169106442435969094}{(discord message)}
+
+		By using the Cauchy Criterion for convergence, show that the sequence defined by \[\left\{x_n\right\}_1^\infty=\frac{1}{1^2}	+ \frac{1}{2^2}	+ \dots + \frac{1}{n^2}.\] converges.
+\end{que}	
+
+\begin{que}
+		Source: Spring 1981 UC Berkley Mahtematics PhD Prelims, Question 16.
+
+Let $f(x)$ be defined as a real-valued function for all $x\ge 1$, such that $f(1)=1$ and \[f^\prime(x) = \frac{1}{x^2 + (f(x))^2}.\]
+Prove that \[\lim_{x\to\infty}f(x)\] exists and the limit is \emph{less than} $1+\frac{\pi}{4}$. 
+\end{que}	
+\end{document}
