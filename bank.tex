@@ -56,6 +56,10 @@ sharp corners, breakable, title={#1}
 The idea for this page came from a YouTube video called ``10,000'' problems in Analysis, which can be found \href{https://youtu.be/3mvNug_YM-g?si=9sa2EVkcANsY7IBk}{here}!
 
 Of course, the goal is to compile a long list of problems ranging from very difficult to near trivial, all to get a better grasp of what it means to do \emph{real} advanced calculus problems.
+
+Some shorthand on sources:
+
+\noindent PMA = Principles of Mathematical Analysis (Rudin)
 \newpage
 \begin{que}
 		Source: Mathematics Discord \href{https://discord.com/channels/268882317391429632/576508782637744130/1169106442435969094}{(discord message)}
@@ -68,5 +72,38 @@ Of course, the goal is to compile a long list of problems ranging from very diff
 
 Let $f(x)$ be defined as a real-valued function for all $x\ge 1$, such that $f(1)=1$ and \[f^\prime(x) = \frac{1}{x^2 + (f(x))^2}.\]
 Prove that \[\lim_{x\to\infty}f(x)\] exists and the limit is \emph{less than} $1+\frac{\pi}{4}$. 
+\end{que}	
+\begin{que}
+Source: Real Analysis (Royden) Chapter 6.1 Question 2
+
+Show that there exists a strictly increasing function $f(x)$ over the interval $[0,1]$, but $f(x)$ is continuous over only the irrationals in $[0,1]$ 
+\end{que}	
+\begin{que}
+Source: PMA (Rudin) Chapter 5
+
+Suppose $f^\prime(x)$ is continuous over an interval $[a,b]$ and let $\varepsilon>0$ . Prove that there exists some $\delta>0$ such that 
+\[\left|\frac{f(t)-f(s)}{t-s}- f^\prime(x)\right|<\varepsilon\]
+whenever $0<\left|t-s\right|<\delta$, $x\in [a,b]; y\in [a,b]$.
+
+If this property holds, we say that $f$ is \emph{uniformly differentiable} on $[a,b]$.
+\end{que}	
+\begin{que}
+Source: PMA (Rudin) Chapter 5
+
+If $f(x) = \left|x\right|^3$, compute $f^\prime(x) \text{ and } f^{\prime\prime}(x)$  for all real $x$. Then show that $f^{(3)}(0)$ does not exist. 
+\end{que}	
+\begin{que}
+		Source: Mathematics StackExchange (\href{https://math.stackexchange.com/questions/4797989/determine-the-points-of-continuity-of-hx-lfloor-sinx-rfloor}{Question}
+
+Determine the points of continuity of $h(x)=\lfloor \sin(x)\rfloor$ , where $\lfloor x \rfloor$  is the greatest $m\in\mathbb{Z}$ such that $m\le x$  (floor function).
+\end{que}	
+\begin{que}
+		Source: Sample UC Davids Real Analysis Questions (\href{https://www.math.ucdavis.edu/~hunter/m125a/m125a_sample_final_solutions.pdf}{Has Solution}
+
+		\begin{enumerate}[(a)]
+				\item Suppose $f_n\colon A \to \mathbb{R}$ is \emph{uniformly continuous} on $A$ for every $n\in\mathbb{N}$ and $f_n\to f$ uniformly on $A$.
+						Prove that $f$ is uniformly continuous on $A$. 
+				\item Does the result in $(a)$ remain true if $f_n\to f$ pointwise instead of uniformly?
+		\end{enumerate}	
 \end{que}	
 \end{document}
