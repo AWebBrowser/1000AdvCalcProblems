@@ -82,7 +82,7 @@ Show that there exists a strictly increasing function $f(x)$ over the interval $
 Source: PMA (Rudin) Chapter 5
 
 Suppose $f^\prime(x)$ is continuous over an interval $[a,b]$ and let $\varepsilon>0$ . Prove that there exists some $\delta>0$ such that 
-\[\left|\frac{f(t)-f(s)}{t-s}- f^\prime(x)\right|<\varepsilon\]
+\[\left|\frac{f(t)-f(x)}{t-x}- f^\prime(x)\right|<\varepsilon\]
 whenever $0<\left|t-s\right|<\delta$, $x\in [a,b]; y\in [a,b]$.
 
 If this property holds, we say that $f$ is \emph{uniformly differentiable} on $[a,b]$.
@@ -93,17 +93,28 @@ Source: PMA (Rudin) Chapter 5
 If $f(x) = \left|x\right|^3$, compute $f^\prime(x) \text{ and } f^{\prime\prime}(x)$  for all real $x$. Then show that $f^{(3)}(0)$ does not exist. 
 \end{que}	
 \begin{que}
-		Source: Mathematics StackExchange (\href{https://math.stackexchange.com/questions/4797989/determine-the-points-of-continuity-of-hx-lfloor-sinx-rfloor}{Question}
+		Source: Mathematics StackExchange (\href{https://math.stackexchange.com/questions/4797989/determine-the-points-of-continuity-of-hx-lfloor-sinx-rfloor}{Question})
 
 Determine the points of continuity of $h(x)=\lfloor \sin(x)\rfloor$ , where $\lfloor x \rfloor$  is the greatest $m\in\mathbb{Z}$ such that $m\le x$  (floor function).
 \end{que}	
 \begin{que}
-		Source: Sample UC Davids Real Analysis Questions (\href{https://www.math.ucdavis.edu/~hunter/m125a/m125a_sample_final_solutions.pdf}{Has Solution}
+		Source: Sample UC Davids Real Analysis Questions (\href{https://www.math.ucdavis.edu/~hunter/m125a/m125a_sample_final_solutions.pdf}{Has Solution})
 
 		\begin{enumerate}[(a)]
 				\item Suppose $f_n\colon A \to \mathbb{R}$ is \emph{uniformly continuous} on $A$ for every $n\in\mathbb{N}$ and $f_n\to f$ uniformly on $A$.
 						Prove that $f$ is uniformly continuous on $A$. 
 				\item Does the result in $(a)$ remain true if $f_n\to f$ pointwise instead of uniformly?
 		\end{enumerate}	
+\end{que}	
+\begin{que}
+Source: Problems in Real Analysis (R\v adlescu et. al) Chapter 5.2 No. 3
+
+Let $f(x)$ be a polynomial and $a$ be a real number such that $f(a)\neq 0$. Show that there exists a polynomial with real coefficients $g(x)$ such that $p(a)=1$, $p^\prime(a)=0$, and $p^{\prime\prime}(a) = 0$, where $p(x)=f(x)g(x)$.  
+\end{que}
+
+\begin{que}
+Source: Problems in Real Analysis (R\v alescu et. al) Chapter 5.2 No 8
+
+Find all \smash{\underline{integers}} $a$ and $b$ such that $0<a<b$ and $a^b=b^a$. 
 \end{que}	
 \end{document}
