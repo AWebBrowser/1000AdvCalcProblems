@@ -46,7 +46,7 @@ sharp corners, breakable, title={#1}
 \tcbuselibrary{external}
 \tcbEXTERNALIZE
 
-\title{A Long Ass List of Problems for 33X}
+\title{A Long List of Problems for 33X}
 \author{Jan Armendariz-Bones et al.}
 \date{Last Updated: \today}
 %}}}
@@ -60,6 +60,8 @@ Of course, the goal is to compile a long list of problems ranging from very diff
 Some shorthand on sources:
 
 \noindent PMA = Principles of Mathematical Analysis (Rudin)
+
+\noindent MSE = Mathematics StackExchange
 \newpage
 \begin{que}
 		Source: Mathematics Discord \href{https://discord.com/channels/268882317391429632/576508782637744130/1169106442435969094}{(discord message)}
@@ -93,7 +95,7 @@ Source: PMA (Rudin) Chapter 5
 If $f(x) = \left|x\right|^3$, compute $f^\prime(x) \text{ and } f^{\prime\prime}(x)$  for all real $x$. Then show that $f^{(3)}(0)$ does not exist. 
 \end{que}	
 \begin{que}
-		Source: Mathematics StackExchange (\href{https://math.stackexchange.com/questions/4797989/determine-the-points-of-continuity-of-hx-lfloor-sinx-rfloor}{Question})
+		Source: MSE (\href{https://math.stackexchange.com/questions/4797989/determine-the-points-of-continuity-of-hx-lfloor-sinx-rfloor}{Question})
 
 Determine the points of continuity of $h(x)=\lfloor \sin(x)\rfloor$ , where $\lfloor x \rfloor$  is the greatest $m\in\mathbb{Z}$ such that $m\le x$  (floor function).
 \end{que}	
@@ -116,5 +118,37 @@ Let $f(x)$ be a polynomial and $a$ be a real number such that $f(a)\neq 0$. Show
 Source: Problems in Real Analysis (R\v alescu et. al) Chapter 5.2 No 8
 
 Find all \smash{\underline{integers}} $a$ and $b$ such that $0<a<b$ and $a^b=b^a$. 
+\end{que}	
+\begin{que}
+Source: Problems in Mathematical Analysis (Kazcor and Nowak) Exercise 2.2.29
+
+Show that the only functions $f\colon\mathbb{R}\to \mathbb{R}$ such that \[\frac{f(x+h)-f(x)}{h}=f^\prime(x+\frac{h}{2})\] 
+
+are polynomials of degree two.
+\end{que}	
+\begin{que}
+Source: Problems in Mathematical Analysis (Kazcor and Nowak) Exercise 2.2.31
+
+Prove that if $f$ is differentiable on an interval $\mathbf{I}$, then the Intermediate Value Theorem can be used on $\mathbf{I}$.
+
+(This is referred to as \emph{Darboux's Theorem}.)
+\end{que}
+\begin{que}
+Source: Kazcor and Nowak Exercise 2.3.9.
+
+Let $f$  be an $n+1$ times differentiable function. Prove that for every $x\in \mathbb{R}$, there exists some $\theta\in(0,1)$ such that
+
+\begin{enumerate}[(a)]
+		\item \[f(x)=f(0)+xf^\prime(x) - \frac{x^2}{2}f^{\prime\prime}(x) +\dots + (-1)^{n+1}\frac{x^n}{n!}f^{(n)}(x) + (-1)^{n+2}\frac{x^{n+1}}{(n+1)!}f^{(n+1)}(\theta x).\]
+		\item \[f\left(\frac{x}{1+x}\right) = f(x) - \frac{x^2}{1+x}f^\prime(x) + \dots + (-1)^n\frac{x^{2n}}{(1+x)^n}\frac{f^{(n)}(x)}{n!} + (-1)^{n+1}\frac{x^{2n+2}}{(1+x)^{n+1}}\frac{f^{(n+1)}(\frac{x+\theta x^2}{1+x})}{(n+1)!}\qquad x\neq -1.\]
+\end{enumerate}	
+\end{que}	
+\begin{que}
+		Source: MSE (\href{https://math.stackexchange.com/questions/4024737/if-a-two-variable-smooth-function-has-two-global-minima-will-it-necessarily-hav}{Source})
+
+Suppose we have a function $f\colon\mathbb{R}^2\to\mathbb{R}$ such that $f$ is smooth ($\mathcal C^\infty$). Furthermore, suppose that $f$ has two global minima. Prove or disprove that $f$ has a third critical point. 
+		\begin{itemize}
+		\item What happens if we add the constraint that $f(x)\to\infty$ as $\|x\|\to\infty$?  
+\end{itemize}	
 \end{que}	
 \end{document}
