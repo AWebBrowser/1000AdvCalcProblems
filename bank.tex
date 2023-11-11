@@ -1,4 +1,4 @@
-\documentclass[letterpaper,twoside]{book}
+\documentclass[letterpaper,twoside]{article}
 
 % Preamble {{{
 \usepackage[margin=1in]{geometry}
@@ -39,17 +39,21 @@
   attach boxed title to top left, boxed title style={sharp corners, colback=solsd}, boxrule=0pt, leftrule=4pt, rightrule=2pt,
 sharp corners, breakable, title={#1}
 }
-\pagestyle{fancy}
-\fancyhead{}
-\fancyfoot[c]{\thepage}
+%}}}
 
+\pagestyle{fancy}
+\fancyfoot[c]{}
+\fancyfoot[rE,lO]{Page \textbf{\thepage} of\textbf{~\pageref*{LastPage}}}
+
+
+\pagenumbering{arabic}
 \tcbuselibrary{external}
 \tcbEXTERNALIZE
+
 
 \title{A Long List of Problems for 33X}
 \author{Jan Armendariz-Bones et al.}
 \date{Last Updated: \today}
-%}}}
 
 \begin{document}{\let\newpage\relax\maketitle}
 \maketitle
@@ -150,5 +154,13 @@ Suppose we have a function $f\colon\mathbb{R}^2\to\mathbb{R}$ such that $f$ is s
 		\begin{itemize}
 		\item What happens if we add the constraint that $f(x)\to\infty$ as $\|x\|\to\infty$?  
 \end{itemize}	
+\end{que}	
+
+\begin{que}
+Let $f,g\colon [0,1]\to \mathbb R$ be continuous functions such that for any continuous $\varphi\colon [0,1] \to \mathbb R$ where $\varphi(1)=\varphi(0)=0$, we have \[\int_0^1(f(x)\varphi^\prime(x) + g(x)\varphi(x))\:\mathrm dx=0\]
+
+Prove that $f$ is continuous over it's domain and $f^\prime(x) = g(x)$.
+
+This theorem is called the \emph{du-Bois Reymond Lemma}.
 \end{que}	
 \end{document}
